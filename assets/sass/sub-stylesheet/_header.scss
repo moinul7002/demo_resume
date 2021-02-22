@@ -1,0 +1,106 @@
+//?========= left side bar css start ========?//
+.nav {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $theme-color;
+    .nav-thumbnail {
+        .profile-thumb {
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100px;
+                width: 100px;
+                border-radius: 100%;
+            }
+        }
+        .profile-des {
+            padding-bottom: 20px;
+            h4 {
+                text-align: center;
+                color: white;
+                margin: 0;
+            }
+            p {
+                text-align: center;
+                color: white;
+                margin: 0;
+            }
+        }
+    }
+    .menu-item {
+        ul.menu-list {
+            max-width: 120px;
+            margin: 0 auto;
+            list-style-type: none;
+            li {
+                margin-bottom: 10px;
+                a {
+                    color: white;
+                }
+                i {
+                    padding-right: 10px;
+                    color: white;
+                }
+                &:last-child() {
+                    li {
+                        margin-bottom: 10;
+                    }
+                }
+            }
+            
+        }
+
+    }
+    .media-list{  
+        ul.icon-list {
+            padding-top: 20px;
+            @extend %flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 5px;
+                list-style: none;
+                &:nth-child(1) {
+                    i {
+                        background: $facebook;
+                    }
+                }
+                &:nth-child(2) {
+                    i {
+                        background: $instagram;
+                    }
+                }
+                &:nth-child(3) {
+                    i {
+                        background: $tumblr;
+                    }
+                }
+                &:nth-child(4) {
+                    i {
+                        background: $twitter;
+                    }
+                }
+                &:nth-child(5) {
+                    i {
+                        background: $skype ;
+                    }
+                }
+                i {
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: white;
+                    background: transparent;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+    }
+}
+//?========= left side bar css ednds ========?//
+
+
